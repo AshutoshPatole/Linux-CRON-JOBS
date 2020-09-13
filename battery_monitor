@@ -46,7 +46,6 @@ if [ `acpi -b | awk ' { print ($3)}'`  == "Discharging," ] ; then
     if [ `acpi -b | awk ' { print ($4)-0}'`  -le "15" ] ; then
         pactl set-sink-volume 0 75\% && pactl set-sink-mute 0 0 && mpg123 /home/username/path-to-audio/batterydie.mp3 ;
 	echo "discharging and less than 15 percent"
-	mpg123 /home/ashu/script/batterydie.mp3
     fi
 else
     # Charging
