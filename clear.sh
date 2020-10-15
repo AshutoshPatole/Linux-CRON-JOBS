@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # This script will clear the cached memory from the system
 # To clear cache memory we have to run the script as root .
 
